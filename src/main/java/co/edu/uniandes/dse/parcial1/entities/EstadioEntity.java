@@ -9,4 +9,6 @@ public class EstadioEntity extends BaseEntity {
 
     private String nombre;
     private Long precioAlquiler;
+    private String nombre_ciudad;
+    private Integer aforo_maximo;
 }
