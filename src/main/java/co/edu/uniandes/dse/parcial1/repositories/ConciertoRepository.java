@@ -7,5 +7,4 @@ import co.edu.uniandes.dse.parcial1.entities.ConciertoEntity;
 
 @Repository
 public interface ConciertoRepository extends JpaRepository<ConciertoEntity, Long> {
-
 }
