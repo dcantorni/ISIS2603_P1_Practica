@@ -15,7 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 public class ConciertoService {
 
     @Autowired
-    private ConciertoRepository ConciertoRepository;
+    private ConciertoRepository conciertoRepository;
 
     @Transactional
     public ConciertoEntity createConcierto(ConciertoEntity concierto){
@@ -30,7 +30,7 @@ public class ConciertoService {
     if (concierto.getPresupuesto() <= 1000){
         throw new IllegalArgumentException("El presupuesto del concierto debe ser superior a $1000 dolares.");
     }
-        return ConciertoRepository.save(concierto); 
+        return conciertoRepository.save(concierto); 
     }
 }
 
